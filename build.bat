@@ -1,2 +1,2 @@
-nuitka --standalone  --output-dir=build .\fluent-launcher.py
+nuitka --standalone  --output-dir=build --no-deployment-flag=self-execution .\fluent-launcher.py
 upx -9 .\build\fluent-launcher.dist\*

@@ -29,12 +29,15 @@ def write_journal(path, input_case, output_case, iteration=1500):
                 .replace('#OUTPUT', output_case))
 
 
-def run_fluent(path, core: int = 1, fluent_path=None):
+def run_fluent(path, fluent_path, core: int = 1):
     main_dir = os.getcwd()
     os.chdir(path)
-    p = subprocess.Popen(
-        [fluent_path, '3d', f'-t{core}', '-g', '-i', 'runner.jou'])
-    p.wait()
+    p = subprocess.call(
+        [fluent_path, '3d', f'-t{core}', '-g', '-i', './runner.jou'],  shell=True, close_fds=True)
+    # p.wait()
+    # p.kill()
+    # os.system(
+    #     " ".join([fluent_path, '3d', f'-t{core}', '-g', '-i', 'runner.jou']))
     os.chdir(main_dir)
 
 
@@ -74,7 +77,7 @@ if __name__ == "__main__":
 
     parser.add_argument('--fluent', type=str, required=False,
                         nargs='?', const=1,
-                        default='C:/"Program Files/ANSYS Inc"/v212/fluent/ntbin/win64/fluent.exe',
+                        default='C:/Program Files/ANSYS Inc/v212/fluent/ntbin/win64/fluent.exe',
                         help="custom location of fluent.exe")
 
     args = parser.parse_args()
