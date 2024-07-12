@@ -1,5 +1,5 @@
 # fluent-launcher
- simple fluent launcher for multiple cases and data
+ > simple fluent launcher for multiple cases and data
 
 ## Introduce
 This is a Python application designed to automate the process of running Ansys Fluent, a software used for computational fluid dynamics (CFD). The application is specifically developed to handle large numbers of case files, making it easier to run simulations and save the results for future analysis and post-processing.
@@ -66,10 +66,11 @@ which means:
   - `-o 'output'` ➡ resultant case and data will save in output.cas.h5 and output.dat.h5
   - `-c ./case_list.txt` ➡ case_list.txt contain something like this:
 
-
->case_list.txt:
-> 
->       simulation_1
->       simulation_2
->       simulation_3
->       simulation_4
+    ---
+            case_list.txt:
+             
+                   simulation_1
+                   simulation_2
+                   simulation_3
+                   simulation_4
+    ---
