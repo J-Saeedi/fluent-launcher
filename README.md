@@ -62,7 +62,7 @@ fluent-launcher  -m 1200 -t 6 -i 'case_and_data' -o 'output' -c ./case_list.txt
 which means:
  - `-m 1200` ➡ set maximum iterations as 1200
  - `-t 6` ➡ 6 cores will be used for fluent
-  - `-i 'case_and_data` ➡ case and data in each folder have this name
+  - `-i 'case_and_data'` ➡ case and data in each folder have this name
   - `-o 'output'` ➡ resultant case and data will save in output.cas.h5 and output.dat.h5
   - `-c ./case_list.txt` ➡ case_list.txt contain something like this:
 
