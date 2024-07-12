@@ -69,7 +69,7 @@ which means:
 
 >case_list.txt:
 > 
->       simulation_1<br>
->       simulation_2<br>
->       simulation_3<br>
->       simulation_4<br>
+>       simulation_1
+>       simulation_2
+>       simulation_3
+>       simulation_4
