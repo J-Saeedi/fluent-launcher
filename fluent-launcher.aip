@@ -5,10 +5,10 @@
     <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
     <ROW Property="Manufacturer" Value="J-Saeedi"/>
-    <ROW Property="ProductCode" Value="1033:{FAC9D18F-AF76-4344-9766-F123DC8DAE3A} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{BF2ECDFA-8757-4739-B478-F9A53CAA643A} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="fluent-launcher"/>
-    <ROW Property="ProductVersion" Value="1.0.6" Options="32"/>
+    <ROW Property="ProductVersion" Value="1.0.7" Options="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{3D7ECE17-F132-4367-91E1-A74DBD256A4E}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
